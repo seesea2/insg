@@ -26,6 +26,11 @@ const routes: Routes = [
       import("./bus-arrival/bus-arrival.module").then(m => m.BusArrivalModule)
   },
   {
+    path: "movies",
+    loadChildren: () =>
+      import("./movies/movies.module").then(m => m.MoviesModule)
+  },
+  {
     path: "",
     component: BusArrivalComponent,
     pathMatch: "full"

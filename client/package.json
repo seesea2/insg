@@ -26,6 +26,7 @@
     "@fortawesome/angular-fontawesome": "^0.6.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "m": "^1.5.6",
     "ngx-cookie-service": "^3.0.0",
     "ngx-quicklink": "^0.2.0",
     "rxjs": "~6.5.4",

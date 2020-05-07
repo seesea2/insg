@@ -11,8 +11,9 @@ import {
   wordsFrequence,
   wordsTotal,
   urlsScanned,
-  urlsTotal
+  urlsTotal,
 } from "./scraper/scrape";
+import { movieList } from "./movies/movies";
 
 // Express server
 const app = express();
@@ -50,6 +51,10 @@ app.get("/api/scraper/urls/scanned", (req: Request, res: Response) => {
 });
 app.get("/api/scraper/urls/total", (req: Request, res: Response) => {
   urlsTotal(res);
+});
+
+app.get("/api/movies", (req: Request, res: Response) => {
+  movieList(res);
 });
 
 app.get("/", (req: Request, res: Response) => {

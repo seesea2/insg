@@ -300,5 +300,3 @@ async function scrapeSchedule() {
     "Asia/Singapore"
   );
 }
-
-scrapeSchedule();
