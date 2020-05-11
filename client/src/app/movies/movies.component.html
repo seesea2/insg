@@ -1,15 +1,8 @@
 <div class="container center">
-  <div *ngIf="!movieList.length">No media available.</div>
+	<h2 class="py-3">Movie List</h2>
 
-  <div *ngIf="movieList.length" class="row">
-    <video class="p-4 border col-sm-10 col-md-6" height=300 autoplay controls>
-      <source src="{{currentMovie}}" type="video/mp4">
-      <source src="{{currentMovie}}" type="video/ogg">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <div *ngFor="let movie of movieList" class="row">
-    <button class="col-3" (click)="chooseMovie(movie)">{{movie}}</button>
-  </div>
+	<div *ngIf="!movieList.length">No media available.</div>
+	<div *ngFor="let movie of movieList" class="row">
+		<a target="_blank" href="https://movies.insg.xyz/{{movie}}">{{movie}}</a>
+	</div>
 </div>
