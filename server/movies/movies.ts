@@ -3,7 +3,7 @@ import { readdir } from "fs";
 import { extname } from "path";
 
 export function movieList(res?: any) {
-  readdir("/srv/nfs/", (err, files) => {
+  readdir("/srv/movies/", (err, files) => {
     // readdir("C:\\yc_projects\\insg\\client\\src\\assets", (err, files) => {
     if (err) {
       console.log(err);
@@ -16,7 +16,7 @@ export function movieList(res?: any) {
         rslt.push(file);
       }
     });
-    console.log(rslt);
+    // console.log(rslt);
     res.status(200).send(rslt);
   });
 }

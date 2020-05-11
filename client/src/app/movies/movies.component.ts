@@ -29,7 +29,7 @@ export class MoviesComponent implements OnInit {
   }
 
   chooseMovie(movie: string) {
-    this.currentMovie = "/assets/" + movie;
-    console.log(this.currentMovie);
+    this.currentMovie = "https://movies.insg.tk/" + movie;
+    // console.log(this.currentMovie);
   }
 }
