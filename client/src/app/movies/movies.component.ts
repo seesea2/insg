@@ -30,6 +30,6 @@ export class MoviesComponent implements OnInit {
 
   chooseMovie(movie: string) {
     this.currentMovie = "https://movies.insg.tk/" + movie;
-    // console.log(this.currentMovie);
+    console.log(this.currentMovie);
   }
 }
