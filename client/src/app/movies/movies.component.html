@@ -1,8 +1,17 @@
 <div class="container center">
 	<h2 class="py-3">Movie List</h2>
 
-	<div *ngIf="!movieList.length">No media available.</div>
-	<div *ngFor="let movie of movieList" class="row">
-		<a target="_blank" href="https://movies.insg.xyz/{{movie}}">{{movie}}</a>
+	<div class="row">
+		<div class="col-sm-12 col-md-4 center" *ngFor="let movie of movieList">
+			<a target="_blank" href="https://movies.insg.xyz/{{movie}}">{{movie}}</a>
+		</div>
 	</div>
+
+	<div *ngIf="!movieList.length">No media available.</div>
+
+	<video width="500" preload="none" controls="true">
+		<source [src]="currentMovie" type="video/mp4" />
+		<source [src]="currentMovie" type="video/ogg" />
+		Movie format not supported by your browser.
+	</video>
 </div>

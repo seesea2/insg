@@ -12,7 +12,8 @@ export function movieList(res?: any) {
 
     let rslt = [];
     files.forEach((file) => {
-      if (extname(file).toLowerCase() === ".mp4") {
+	let ext = extname(file).toLowerCase(); 
+      if (ext === ".mp4" || ext === ".mov") {
         rslt.push(file);
       }
     });
