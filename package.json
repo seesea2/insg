@@ -20,8 +20,7 @@
     "cors": "^2.8.5",
     "cron": "^1.8.2",
     "express": "^4.17.1",
-    "express-session": "^1.17.0",
-    "sqlite3": "^4.1.1"
+    "express-session": "^1.17.0"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
